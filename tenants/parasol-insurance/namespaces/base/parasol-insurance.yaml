@@ -4,3 +4,4 @@ metadata:
   name: parasol-insurance
 labels:
   opendatahub.io/dashboard: "true"
+  kubernetes.io/metadata.name: parasol-insurance
