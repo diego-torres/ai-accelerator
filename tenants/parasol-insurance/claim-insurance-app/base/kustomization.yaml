@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - claim-insurance-app.yaml
+  - claim-insurance-minio-app.yaml
