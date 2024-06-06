@@ -4,3 +4,4 @@ metadata:
   name: object-datastore
   labels:
     kubernetes.io/metadata.name: object-datastore
+    modelmesh-enabled: "true"
