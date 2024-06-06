@@ -3,5 +3,4 @@ kind: Namespace
 metadata:
   name: object-datastore
   labels:
-    opendatahub.io/dashboard: "true"
     kubernetes.io/metadata.name: object-datastore
