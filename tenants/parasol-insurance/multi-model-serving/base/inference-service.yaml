@@ -5,6 +5,7 @@ metadata:
     openshift.io/display-name: accident-detect-model
     serving.kserve.io/deploymentMode: ModelMesh
   name: accident-detect-model
+  namespace: parasol-insurance
   labels:
     opendatahub.io/dashboard: 'true'
 spec:
