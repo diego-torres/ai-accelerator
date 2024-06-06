@@ -5,8 +5,8 @@ metadata:
 spec:
   destination:
     server: https://kubernetes.default.svc
-    namespace: claim-insurance-app
-  project: tenants
+    namespace: userX
+  project: default
   source:
     path: lab-materials/05/app
     repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
