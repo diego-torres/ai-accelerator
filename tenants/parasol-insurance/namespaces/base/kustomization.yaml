@@ -3,3 +3,4 @@ kind: Kustomization
 
 resources:
   - parasol-insurance.yaml
+  - claim-insurance-app.yaml
