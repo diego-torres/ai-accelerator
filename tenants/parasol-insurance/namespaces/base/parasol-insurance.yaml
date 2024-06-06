@@ -3,6 +3,4 @@ kind: Namespace
 metadata:
   name: parasol-insurance
 labels:
-- includeSelectors: false
-  pairs:
-    opendatahub.io/dashboard: "true"
+  opendatahub.io/dashboard: "true"
