@@ -18,5 +18,5 @@ spec:
       resources: {}
       runtime: multi-model-server
       storage:
-        key: accident-model-data-conn
-        path: accident_detect/accident_detect.onnx
+        key: accident-model-s3
+        path: accident_model/accident_detect.onnx
