@@ -3,10 +3,6 @@ kind: Application
 metadata:
   name: claim-insurance-app
 spec:
-  destination:
-    server: https://kubernetes.default.svc
-    namespace: claim-insurance-app
-  project: claim-insurance-app
   source:
     path: lab-materials/05/app
     repoURL: https://github.com/rh-aiservices-bu/parasol-insurance.git
