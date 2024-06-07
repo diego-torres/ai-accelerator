@@ -4,9 +4,16 @@ metadata:
   name: dsp-example
 spec:
   params:
-    - default: 'https://github.com/redhat-ai-services/kubeflow-pipelines-examples.git'
+    - default: 'https://github.com/redhat-ai-services/ai-accelerator-bootcamp.git'
       description: Repo URL
       name: GIT_URL
+      type: string
+    - default: 'source_code/40_pipelines'
+      description: Repo URL
+      name: GIT_CONTEXT
+      type: string
+    - default: 'source_code/40_pipelines/train-car-rekon.py'
+      name: PIPELINE_SCRIPT
       type: string
     - default: main
       name: GIT_REVISION
@@ -40,7 +47,7 @@ spec:
         - name: VERSION
           value: $(params.PYTHON_IMAGE)
         - name: PATH_CONTEXT
-          value: .
+          value: $(params.GIT_CONTEXT)
         - name: IMAGE
           value: $(params.TARGET_IMAGE)
       runAfter:
@@ -58,7 +65,7 @@ spec:
         - name: TAG
           value: latest
         - name: SCRIPT
-          value: pipelines/11_iris_training_pipeline.py
+          value: $(params.PIPELINE_SCRIPT)
         - name: KUBEFLOW_ENDPOINT
           value: $(params.KUBEFLOW_ENDPOINT)
       runAfter:
