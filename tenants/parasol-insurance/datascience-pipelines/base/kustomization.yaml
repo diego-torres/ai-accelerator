@@ -4,5 +4,4 @@ kind: Kustomization
 namespace: parasol-insurance
 
 resources:
-  - ../../../../components/apps/minio/overlays/default
   - dspa.yaml
