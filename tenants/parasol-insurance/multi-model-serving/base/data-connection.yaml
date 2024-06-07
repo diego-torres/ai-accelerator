@@ -1,14 +1,13 @@
 kind: Secret
 apiVersion: v1
 metadata:
-  name: accident-model-s3
-  namespace: parasol-insurance
+  name: accident-model-data-conn
   labels:
     opendatahub.io/dashboard: 'true'
     opendatahub.io/managed: 'true'
   annotations:
     opendatahub.io/connection-type: s3
-    openshift.io/display-name: accident-model-s3
+    openshift.io/display-name: multi-model
     # argocd.argoproj.io/sync-wave: "-100"
 stringData:
   AWS_ACCESS_KEY_ID: minio
