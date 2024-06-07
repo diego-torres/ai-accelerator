@@ -26,5 +26,9 @@ spec:
           value: $(inputs.params.KUBEFLOW_ENDPOINT)
       script: |
         set -x
+        echo "lets start this cript"
+        pwd
+        ls -la
+        echo "about to execute python now"
         python $(inputs.params.SCRIPT)
         set +x
