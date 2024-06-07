@@ -12,7 +12,7 @@ spec:
       description: Repo URL
       name: GIT_CONTEXT
       type: string
-    - default: 'source_code/40_pipelines/train-car-rekon.py'
+    - default: 'train-car-rekon.py'
       name: PIPELINE_SCRIPT
       type: string
     - default: main
