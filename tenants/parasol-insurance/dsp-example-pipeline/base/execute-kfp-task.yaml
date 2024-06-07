@@ -25,4 +25,6 @@ spec:
         - name: KUBEFLOW_ENDPOINT
           value: $(inputs.params.KUBEFLOW_ENDPOINT)
       script: |
+        set -x
         python $(inputs.params.SCRIPT)
+        set +x
